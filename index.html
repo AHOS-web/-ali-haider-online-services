@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Haider Online Services - AHOS</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8fafc;color:#1e293b}
+header{background:linear-gradient(135deg,#0f172a,#1e40af);color:#fff;padding:18px 20px;position:sticky;top:0;z-index:100}
+.nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto}
+.logo{font-weight:700;font-size:20px}
+.logo span{color:#60a5fa}
+.hero{max-width:1100px;margin:auto;padding:60px 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero h1{font-size:34px;line-height:1.2;margin-bottom:15px}
+.hero h1 span{color:#2563eb}
+.hero p{color:#475569;margin-bottom:25px}
+.btn{display:inline-block;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;margin-right:10px;margin-top:10px}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-whatsapp{background:#25D366;color:#fff}
+.card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 10px 25px rgba(0,0,0,.07)}
+.services{max-width:1100px;margin:auto;padding:40px 20px}
+.section-title{text-align:center;font-size:28px;font-weight:700;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.service{border:1px solid #e2e8f0;transition:.3s}
+.service:hover{transform:translateY(-5px);border-color:#2563eb}
+.service i{font-size:32px;color:#2563eb;margin-bottom:12px}
+.service h3{margin-bottom:8px}
+.price{color:#16a34a;font-weight:700;margin-top:10px}
+.contact{max-width:1100px;margin:auto;padding:50px 20px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+input,textarea,select{width:100%;padding:12px 15px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:12px}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:20px;margin-top:40px}
+@media(max-width:768px){.hero,.contact{grid-template-columns:1fr}.hero h1{font-size:26px}}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 5px 15px rgba(0,0,0,.3);text-decoration:none;z-index:999}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="logo"><i class="fa-solid fa-globe"></i> AHOS - <span>Ali Haider</span></div><div>Online Services</div></div></header>
+<section class="hero">
+<div>
+<h1>All <span>Online Services</span> at One Place</h1>
+<p>Nadra, Passport, FRC, Education, Jobs, CV, Card Design & All Pakistan Online Services. Fast, Trusted & Affordable.</p>
+<a href="#services" class="btn btn-primary">Our Services</a>
+<a href="https://wa.me/923000000000" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+<div style="margin-top:20px;display:flex;gap:15px;font-size:13px;flex-wrap:wrap"><span><i class="fa-solid fa-check" style="color:#16a34a"></i> 1000+ Customers</span><span><i class="fa-solid fa-check" style="color:#16a34a"></i> 24/7 Support</span><span><i class="fa-solid fa-check" style="color:#16a34a"></i> Fast Service</span></div>
+</div>
+<div class="card">
+<h3 style="margin-bottom:15px">Quick Order Form</h3>
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="WhatsApp Number">
+<select><option>Select Service</option><option>Nadra Services</option><option>FRC / B-Form</option><option>Passport Services</option><option>CV / Resume</option><option>Card Design</option><option>Online Apply</option></select>
+<textarea placeholder="Details likhen..."></textarea>
+<a href="https://wa.me/923000000000" class="btn btn-primary" style="width:100%;text-align:center">Send on WhatsApp</a>
+</div>
+</section>
+<section id="services" class="services">
+<h2 class="section-title">Our Popular Services</h2>
+<div class="grid">
+<div class="card service"><i class="fa-solid fa-id-card"></i><h3>NADRA Services</h3><p>CNIC Verification, Family Details, FRC, B-Form, Data Services</p><div class="price">Starting Rs. 500</div></div>
+<div class="card service"><i class="fa-solid fa-passport"></i><h3>Passport Services</h3><p>Passport Tracking, Status Check, Appointment Help</p><div class="price">Starting Rs. 300</div></div>
+<div class="card service"><i class="fa-solid fa-file-lines"></i><h3>CV / Resume Making</h3><p>Professional CV, Cover Letter, Job Application</p><div class="price">Starting Rs. 400</div></div>
+<div class="card service"><i class="fa-solid fa-palette"></i><h3>Card Designing</h3><p>Visiting Cards, Wedding Cards, ID Cards Design & Print</p><div class="price">Starting Rs. 250</div></div>
+<div class="card service"><i class="fa-solid fa-briefcase"></i><h3>Jobs Apply</h3><p>All Pakistan Govt & Private Jobs Online Apply</p><div class="price">Starting Rs. 200</div></div>
+<div class="card service"><i class="fa-solid fa-graduation-cap"></i><h3>Education Services</h3><p>Result Check, Admissions, Scholarships, NTS Forms</p><div class="price">Starting Rs. 200</div></div>
+</div>
+</section>
+<section class="contact">
+<div class="card"><h3>Contact Us</h3><br><p><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp: 0300-0000000</p><br><p><i class="fa-solid fa-envelope"></i> Email: alihaider.services@gmail.com</p><br><p><i class="fa-solid fa-location-dot"></i> Location: All Pakistan Online Service</p><br><p>Payment: Easypaisa / JazzCash / Bank</p></div>
+<div class="card"><h3>Why Choose Us?</h3><br><p>✅ Trusted by 1000+ customers</p><p>✅ Fast delivery 1-2 hours</p><p>✅ Low price guarantee</p><p>✅ 24/7 WhatsApp support</p><p>✅ Secure & Confidential</p><br><a href="https://wa.me/923000000000" class="btn btn-whatsapp" style="width:100%;text-align:center">Chat on WhatsApp</a></div>
+</section>
+<footer>© 2026 AHOS - Ali Haider Online Services. All Rights Reserved.</footer>
+<a href="https://wa.me/923000000000" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
+</body>
+</html>
